@@ -31,7 +31,7 @@ li.nav-bar-item a.nav-bar-link {
   text-decoration: none;
 }
 
-li.nav-bar-item a.nav-bar-link:hover {
+li.nav-bar-item:hover {
   background-color: #333;
 }
 
@@ -42,11 +42,11 @@ li.nav-bar-item1 a.nav-bar-link {
   text-decoration: none;
 }
 
-li.nav-bar-item1 a.nav-bar-link:hover {
+li.nav-bar-item1:hover {
   background-color: #333;
 }
 
 
-li.nav-bar-item1 a.nav-bar-link #logo:hover {
+#logo:hover {
   background-color: #333;
 }

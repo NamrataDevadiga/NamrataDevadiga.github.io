@@ -1,7 +1,220 @@
 body{
-	margin:0%;
+	font-family: 'Roboto', sans-serif;
+  width: 100%;
 }
 
-.home{
+ul
+{
+ list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+.navbar-custom{
+	font-family: 'Roboto', sans-serif;
+	background-color: Salmon;
+	border-color: LightCoral;
+	border-radius: 0;
+	width: 100%;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: white;
+    background-color: LightSalmon;
+}
+
+.navbar-custom .navbar-brand {
+    color: white;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: white;
+  color: white;
+  padding: 0;
+} 
+
+#home{
+	text-align: left;
+	font-size: 2vw;
+}
+
+.home-text {
+	font-size:5vw;
+}
+
+.btn{
+  border: 0.2vw solid LightCoral;
+  border-radius: 0.5;
+  background-color: Salmon;
+  color: white;
+  padding: 0.5vw 1vw;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: LightSalmon;
+  color: white;
+}
+
+.card-img-top{
+	border-radius: 0;
+}
+
+.about-card {
+	border: 0.15vw solid Salmon;
+	border-radius: 0;
+	border-top-style:none;
+}
+
+.about-middle {
+	border-top-style:solid;
+	border-bottom-style:none;
+}
+
+.work-text {
   text-align: center;
+  color: Salmon;
+}
+
+.work-des {
+  text-align: justify;
+}
+
+.work-resume {
+  text-align: center;
+}
+
+.btn1{
+  border: 0.2vw solid LightCoral;
+  border-radius: 0.3vw;
+  background-color: white;
+  color: Salmon;
+  padding: 0.5vw 1vw;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: LightSalmon;
+  color: white;
+}
+
+.contact-text {
+  width: 32%;
+  float: right;
+  background-color: rgba(105, 220, 255, 0.05); 
+  padding: 0.75vw;
+  margin-right: 4%;
+}
+
+.contact-icon-big {
+  border-color: lightgrey;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-icon-big:hover {
+  border-color: Salmon;
+}
+
+.contact-link {
+  color: black;
+}
+
+.contact-link:hover {
+  color: black;
+}
+
+.contact-link:visited {
+  color: black;
+}
+
+.contact-card-med {
+  border-style: none;
+  padding: 15;
+}
+
+.contact-med-img {
+  text-align: center;
+  border-style: none;
+}
+
+.med-icon {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.med-title{
+  color: Salmon;
+}
+
+.contact-card {
+  border: 0.15vw solid Salmon;
+  border-radius: 0;
+}
+
+.small-icons {
+  border-style: none;
+}
+
+.contact-icon-small {
+  border-color: Salmon;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-icon-small:hover {
+  border-color: Salmon;
+  background-color: rgb(255, 170, 153, 0.5);
+}
+
+.contact-icon-small:visited {
+  border-color: Salmon;
+  width: 100%;
+}
+
+.work-link:hover {
+  opacity: 0.7;
+}
+
+
+.project-text {
+  text-align: center;
+  color: Salmon;
+}
+
+.back {
+  text-align: center;
+}
+
+.btn2{
+  border: 0.2vw solid LightCoral;
+  border-radius: 0.3vw;
+  background-color: white;
+  color: Salmon;
+  padding: 0.5vw 1vw;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn2:hover {
+  background-color: LightSalmon;
+  color: white;
+  text-decoration: none;
+}
+
+.project1-desc {
+  border: 0.15vw solid Salmon;
+  border-radius: 0;
+  padding: 1vw;
+  text-align: justify;
 }

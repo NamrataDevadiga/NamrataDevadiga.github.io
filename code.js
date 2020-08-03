@@ -5,7 +5,6 @@ jQuery(document).ready(function($) {
 	$('.content#home').toggle();
 
 	$('a[href^="#"]').on('click', function(event) {
-		// console.log(event.target.hash);
 		$('.content') .hide()
 	    var target = $(this).attr('href');
 	    div = target;
@@ -39,6 +38,8 @@ jQuery(document).ready(function($) {
 
 	$(window).on('load', function(){
 		div = window.location.hash;
+		if (div.length == 0)
+			div ="#home";
 		var target = div;
 		$('.content') .hide()
 		if (target == "#contact")

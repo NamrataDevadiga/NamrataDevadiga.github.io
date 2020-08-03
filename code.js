@@ -103,10 +103,10 @@ jQuery(document).ready(function($) {
 	    }
   	});
 
-  	$('.navbar-nav a').on('click', function(){
+	$('.navbar a').on('click', function(){
   		if (window.innerWidth <= 590)
   		{
-  			$('.navbar-toggler').click(); 
+  			$('.navbar-toggler').click();
   		}
 	});
 });

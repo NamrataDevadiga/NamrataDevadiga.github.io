@@ -1,6 +1,8 @@
 jQuery(document).ready(function($) {
 	var div = "#home";
-	$('[data-toggle="tooltip"]').tooltip();   
+	$('[data-toggle="tooltip"]').tooltip({
+		trigger : 'hover'
+	});   
 	$('.content') .hide()
 	$('.content#home').toggle();
 

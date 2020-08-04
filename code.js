@@ -7,12 +7,13 @@ jQuery(document).ready(function($) {
 	$('.content#home').toggle();
 
 	$('a[href^="#"]').on('click', function(event) {
+		var ratio = window.innerWidth/window.innerHeight;
 		$('.content') .hide()
 	    var target = $(this).attr('href');
 	    div = target;
 	    if (target == "#contact")
 	    {
-	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700)
+	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();
 	    		$(".contact-medium").hide();
@@ -39,6 +40,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$(window).on('load', function(){
+		var ratio = window.innerWidth/window.innerHeight;
 		div = window.location.hash;
 		if (div.length == 0)
 			div ="#home";
@@ -46,7 +48,7 @@ jQuery(document).ready(function($) {
 		$('.content') .hide()
 		if (target == "#contact")
 	    {
-	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700)
+	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();
 	    		$(".contact-medium").hide();
@@ -80,9 +82,10 @@ jQuery(document).ready(function($) {
 	});
 
 	$(window).resize(function(){
+		var ratio = window.innerWidth/window.innerHeight;
     	if (div == "#contact")
 	    {
-	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700)
+	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();
 	    		$(".contact-medium").hide();

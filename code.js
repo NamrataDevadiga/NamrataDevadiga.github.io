@@ -1,18 +1,19 @@
 jQuery(document).ready(function($) {
-	var div = "#home";
+	$('.content') .hide()
+	
 	$('[data-toggle="tooltip"]').tooltip({
 		trigger : 'hover'
 	});   
-	$('.content') .hide()
-	$('.content#home').toggle();
 
-	$('a[href^="#"]').on('click', function(event) {
+	$('.nav-link').on('click', function(event) {
 		var ratio = window.innerWidth/window.innerHeight;
-		$('.content') .hide()
-	    var target = $(this).attr('href');
-	    div = target;
-	    if (target == "#contact")
+	    var ratio = window.innerWidth/window.innerHeight;
+		var path = window.location.pathname;
+		var page = path.split("/").pop();
+
+	    if (page == "contact.html")
 	    {
+	    	$('.content') .hide()
 	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();
@@ -31,23 +32,18 @@ jQuery(document).ready(function($) {
 	    		$(".contact-small").hide();
 	    		$(".contact-medium").show();
 	    	}
-	    	$('.content'+target).show();
-	    }
-	    else
-	    {
-	    	$('.content'+target).show();
+	    	$('.content').show();
 	    }
 	});
 
 	$(window).on('load', function(){
 		var ratio = window.innerWidth/window.innerHeight;
-		div = window.location.hash;
-		if (div.length == 0)
-			div ="#home";
-		var target = div;
-		$('.content') .hide()
-		if (target == "#contact")
+		var path = window.location.pathname;
+		var page = path.split("/").pop();
+		
+		if (page == "contact.html")
 	    {
+	    	$('.content') .hide()
 	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();
@@ -66,25 +62,24 @@ jQuery(document).ready(function($) {
 	    		$(".contact-small").hide();
 	    		$(".contact-medium").show();
 	    	}
-	    	$('.content'+target).show();
-	    }
-	    else
-	    {
-	    	$('.content'+target).show();
+	    	$('.content').show();
 	    }
 	});
 
-	$(window).on("popstate", function() {
-		div = location.hash;
-		var target = div;
-		$('.content') .hide();
-		$('.content'+target).show();
-	});
+	// $(window).on("popstate", function() {
+	// 	div = location.hash;
+	// 	var target = div;
+	// 	$('.content') .hide();
+	// 	$('.content'+target).show();
+	// });
 
 	$(window).resize(function(){
 		var ratio = window.innerWidth/window.innerHeight;
-    	if (div == "#contact")
+		var path = window.location.pathname;
+		var page = path.split("/").pop();
+    	if (page == "contact.html")
 	    {
+	    	$('.content') .hide()
 	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();
@@ -104,6 +99,7 @@ jQuery(document).ready(function($) {
 	    		$(".contact-medium").show();
 	    	}	    
 	    }
+	    $('.content').show()
   	});
 
 	$('.navbar-nav a').on('click', function(){

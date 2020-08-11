@@ -18,6 +18,9 @@ li {
 	border-color: LightCoral;
 	border-radius: 0;
 	width: 100%;
+  overflow: hidden;
+  position:fixed;
+  z-index:1;
 }
 
 .navbar-custom .navbar-nav .nav-link {

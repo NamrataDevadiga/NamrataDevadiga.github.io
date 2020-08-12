@@ -1,9 +1,9 @@
 jQuery(document).ready(function($) {
 	$('.content') .hide()
 	
-	$('[data-toggle="tooltip"]').tooltip({
-		trigger : 'hover'
-	});   
+	// $('[data-toggle="tooltip"]').tooltip({
+	// 	trigger : 'hover'
+	// });   
 
 	$('.nav-link').on('click', function(event) {
 		var ratio = window.innerWidth/window.innerHeight;

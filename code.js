@@ -1,15 +1,16 @@
 jQuery(document).ready(function($) {
 	$('.content') .hide()
 	
-	// $('[data-toggle="tooltip"]').tooltip({
-	// 	trigger : 'hover'
-	// });   
+	$('[data-toggle="tooltip"]').tooltip({
+		trigger : 'hover'
+	});   
 
 	$('.nav-link').on('click', function(event) {
 		var ratio = window.innerWidth/window.innerHeight;
 	    var ratio = window.innerWidth/window.innerHeight;
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
+		console.log(page);
 
 		// if (page == "index.html")
 		// {
@@ -49,8 +50,8 @@ jQuery(document).ready(function($) {
 	    		$(".contact-small").hide();
 	    		$(".contact-medium").show();
 	    	}
-	    	$('.content').show();
 	    }
+	    $('.content').show();
 	});
 
 	// var TxtRotate = function(el, toRotate, period) {
@@ -98,6 +99,7 @@ jQuery(document).ready(function($) {
 		var ratio = window.innerWidth/window.innerHeight;
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
+		console.log(page);
 
 		// if (page == "index.html")
 		// {
@@ -137,8 +139,8 @@ jQuery(document).ready(function($) {
 	    		$(".contact-small").hide();
 	    		$(".contact-medium").show();
 	    	}
-	    	$('.content').show();
 	    }
+	    $('.content').show();
 	});
 
 	// $(window).on("popstate", function() {

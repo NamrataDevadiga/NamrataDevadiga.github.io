@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
 
-		if (page == "index.html")
+		if (page == "index.html" || page == "")
 		{
 			var elements = document.getElementsByClassName('txt-rotate');
 			for (var i=0; i<elements.length; i++) {
@@ -98,10 +98,10 @@ jQuery(document).ready(function($) {
 		var ratio = window.innerWidth/window.innerHeight;
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
+		console.log(page);
 
-		if (page == "index.html")
+		if (page == "index.html" || page == "")
 		{
-
 			var elements = document.getElementsByClassName('txt-rotate');
 			for (var i=0; i<elements.length; i++) {
 			    var toRotate = elements[i].getAttribute('data-rotate');

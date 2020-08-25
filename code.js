@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	$('.content') .hide()
-	
+
 	$('[data-toggle="tooltip"]').tooltip({
 		trigger : 'hover'
 	});   
@@ -155,7 +155,7 @@ jQuery(document).ready(function($) {
 		var page = path.split("/").pop();
     	if (page == "contact.html")
 	    {
-	    	$('.content').hide()
+	    	// $('.content').hide()
 	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();

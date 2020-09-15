@@ -118,7 +118,7 @@ jQuery(document).ready(function($) {
 		
 		if (page == "contact.html")
 	    {
-	    	//$('.content') .hide()
+	    	$('.content') .hide()
 	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();
@@ -136,9 +136,9 @@ jQuery(document).ready(function($) {
 	    		$(".contact-large").hide();
 	    		$(".contact-small").hide();
 	    		$(".contact-medium").show();
-	    	}
+			}
+			$('.content').show();
 	    }
-	    //$('.content').show();
 	});
 
 	$(window).resize(function(){

@@ -95,6 +95,7 @@ jQuery(document).ready(function($) {
 	};
 
 	$(window).on('load', function(){
+		console.log("Inside on load");
 		var ratio = window.innerWidth/window.innerHeight;
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
@@ -147,7 +148,6 @@ jQuery(document).ready(function($) {
 		var page = path.split("/").pop();
     	if (page == "contact.html")
 	    {
-	    	// $('.content').hide()
 	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();
@@ -167,7 +167,6 @@ jQuery(document).ready(function($) {
 	    		$(".contact-medium").show();
 	    	}	    
 	    }
-	    //$('.content').show()
   	});
 
 	$('.navbar-nav a').on('click', function(){

@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
 	});   
 
 	$('.nav-link').on('click', function(event) {
-		console.log(event);
+		console.log(event.currentTarget.href);
 		var ratio = window.innerWidth/window.innerHeight;
 	    var ratio = window.innerWidth/window.innerHeight;
 		var path = window.location.pathname;

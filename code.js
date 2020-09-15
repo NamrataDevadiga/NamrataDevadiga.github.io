@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
 	});   
 
 	$('.nav-link').on('click', function(event) {
+		console.log(event);
 		var ratio = window.innerWidth/window.innerHeight;
 	    var ratio = window.innerWidth/window.innerHeight;
 		var path = window.location.pathname;
@@ -97,7 +98,6 @@ jQuery(document).ready(function($) {
 		var ratio = window.innerWidth/window.innerHeight;
 		var path = window.location.pathname;
 		var page = path.split("/").pop();
-		console.log(page);
 
 		if (page == "index.html" || page == "")
 		{
@@ -140,13 +140,6 @@ jQuery(document).ready(function($) {
 	    }
 	    //$('.content').show();
 	});
-
-	// $(window).on("popstate", function() {
-	// 	div = location.hash;
-	// 	var target = div;
-	// 	$('.content') .hide();
-	// 	$('.content'+target).show();
-	// });
 
 	$(window).resize(function(){
 		var ratio = window.innerWidth/window.innerHeight;

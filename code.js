@@ -1,5 +1,4 @@
 jQuery(document).ready(function($) {
-	$('.content') .hide()
 
 	$('[data-toggle="tooltip"]').tooltip({
 		trigger : 'hover'
@@ -50,7 +49,7 @@ jQuery(document).ready(function($) {
 	    		$(".contact-medium").show();
 	    	}
 	    }
-	    $('.content').show();
+	    //$('.content').show();
 	});
 
 	var TxtRotate = function(el, toRotate, period) {
@@ -139,7 +138,7 @@ jQuery(document).ready(function($) {
 	    		$(".contact-medium").show();
 	    	}
 	    }
-	    $('.content').show();
+	    //$('.content').show();
 	});
 
 	// $(window).on("popstate", function() {
@@ -175,7 +174,7 @@ jQuery(document).ready(function($) {
 	    		$(".contact-medium").show();
 	    	}	    
 	    }
-	    $('.content').show()
+	    //$('.content').show()
   	});
 
 	$('.navbar-nav a').on('click', function(){

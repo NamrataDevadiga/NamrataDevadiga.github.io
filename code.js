@@ -5,10 +5,9 @@ jQuery(document).ready(function($) {
 	});   
 
 	$('.nav-link').on('click', function(event) {
-		console.log(event.currentTarget.href);
 		var ratio = window.innerWidth/window.innerHeight;
 	    var ratio = window.innerWidth/window.innerHeight;
-		var path = window.location.pathname;
+		var path = event.currentTarget.href;
 		var page = path.split("/").pop();
 
 		if (page == "index.html" || page == "")
@@ -30,7 +29,7 @@ jQuery(document).ready(function($) {
 
 	    if (page == "contact.html")
 	    {
-	    	//$('.content') .hide()
+	    	$('.content') .hide()
 	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
 	    	{
 	    		$(".contact-small").hide();
@@ -48,9 +47,9 @@ jQuery(document).ready(function($) {
 	    		$(".contact-large").hide();
 	    		$(".contact-small").hide();
 	    		$(".contact-medium").show();
-	    	}
+			}
+			$('.content').show();
 	    }
-	    //$('.content').show();
 	});
 
 	var TxtRotate = function(el, toRotate, period) {

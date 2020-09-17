@@ -91,51 +91,6 @@ jQuery(document).ready(function($) {
   	// }, delta);
 	// };
 
-	$(window).on('load', function(){
-		var ratio = window.innerWidth/window.innerHeight;
-		var path = window.location.pathname;
-		var page = path.split("/").pop();
-
-		// if (page == "index.html" || page == "")
-		// {
-		// 	var elements = document.getElementsByClassName('txt-rotate');
-		// 	for (var i=0; i<elements.length; i++) {
-		// 	    var toRotate = elements[i].getAttribute('data-rotate');
-		// 	    var period = elements[i].getAttribute('data-period');
-		// 	    if (toRotate) {
-		// 	      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-		// 	   	}
-		// 	}
-		//   // INJECT CSS
-		//   	var css = document.createElement("style");
-		//   	css.type = "text/css";
-		//   	css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-		//   	document.body.appendChild(css);
-		// }
-		
-		if (page == "contact.html")
-	    {
-	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
-	    	{
-	    		$(".contact-small").hide();
-	    		$(".contact-medium").hide();
-	    		$(".contact-large").show();
-	    	}
-	    	else if(window.innerWidth <= 590)
-	    	{
-	    		$(".contact-large").hide();
-	    		$(".contact-small").show();
-	    		$(".contact-medium").hide();
-	    	}
-	    	else
-	    	{
-	    		$(".contact-large").hide();
-	    		$(".contact-small").hide();
-	    		$(".contact-medium").show();
-	    	}	    
-	    }
-	});
-
 	$(window).resize(function(){
 		var ratio = window.innerWidth/window.innerHeight;
 		var path = window.location.pathname;
@@ -170,3 +125,31 @@ jQuery(document).ready(function($) {
   		}
 	});
 });
+
+$(window).on('load', function(){
+		var ratio = window.innerWidth/window.innerHeight;
+		var path = window.location.pathname;
+		var page = path.split("/").pop();
+		
+		if (page == "contact.html")
+	    {
+	    	if (window.innerWidth >= 1300 && window.innerHeight >= 700 && ratio >= 1.75)
+	    	{
+	    		$(".contact-small").hide();
+	    		$(".contact-medium").hide();
+	    		$(".contact-large").show();
+	    	}
+	    	else if(window.innerWidth <= 590)
+	    	{
+	    		$(".contact-large").hide();
+	    		$(".contact-small").show();
+	    		$(".contact-medium").hide();
+	    	}
+	    	else
+	    	{
+	    		$(".contact-large").hide();
+	    		$(".contact-small").hide();
+	    		$(".contact-medium").show();
+	    	}	    
+	    }
+	});
